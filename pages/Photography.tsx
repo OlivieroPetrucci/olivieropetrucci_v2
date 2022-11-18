@@ -1,5 +1,3 @@
-export default function Photography(){
-    return(
-
-    );
+export default function Photography() {
+  return <div>ciao</div>;
 }
