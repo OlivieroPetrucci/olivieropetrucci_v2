@@ -1,4 +1,8 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -13,14 +17,69 @@ a {
 
 * {
   box-sizing: border-box;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face {
+  font-family: "burtons";
+  src: url("../public/fonts/Burtons.otf");
+}
+@font-face {
+  font-family: "qumpell";
+  src: url("../public/fonts/qumpell.otf");
+}
+@font-face {
+  font-family: "migaela";
+  src: url("../public/fonts/migaela.otf");
+}
+@font-face {
+  font-family: "scripto";
+  src: url("../public/fonts/scripto.ttf");
+}
+@font-face {
+  font-family: "aloevera";
+  src: url("../public/fonts/aloevera.ttf");
+}
+@font-face {
+  font-family: "retrofunk";
+  src: url("../public/fonts/retrofunk.otf");
+}
+@font-face {
+  font-family: "helloketta";
+  src: url("../public/fonts/helloketta.ttf");
+}
+@font-face {
+  font-family: "metropolis";
+  src: url("../public/fonts/metropolis.ttf");
+}
+@font-face {
+  font-family: "rosmatika";
+  src: url("../public/fonts/rosmatika.ttf");
+}
+@font-face {
+  font-family: "power_light";
+  src: url("../public/fonts/power_light.ttf");
+}
+@font-face {
+  font-family: "boska_bold";
+  src: url("../public/fonts/boska_bold.ttf");
+}
+@font-face {
+  font-family: "cabinet_bold";
+  src: url("../public/fonts/cabinet_bold.otf");
+}
+@font-face {
+  font-family: "cabinet_medium";
+  src: url("../public/fonts/cabinet_medium.otf");
+}
+@font-face {
+  font-family: "cabinet_thin";
+  src: url("../public/fonts/cabinet_thin.otf");
+}
+@font-face {
+  font-family: "cabinet_light";
+  src: url("../public/fonts/cabinet_light.otf");
+}
+@font-face {
+  font-family: "cabinet_black";
+  src: url("../public/fonts/cabinet_black.otf");
 }
