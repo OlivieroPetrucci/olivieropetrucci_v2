@@ -13,7 +13,7 @@ export default function Contatti() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>OP | profilo</title>
+        <title>OP | contatti</title>
       </Head>
       <motion.main
         initial={{ opacity: 0 }}
@@ -23,9 +23,9 @@ export default function Contatti() {
         className=" bg-stone-200"
       >
         <section className="flex flex-col ">
-          <nav className="h-[8vh] py-8 px-20 ">
+          <nav className="h-[8vh] flex items-center py-8  ">
             <Link
-              className="absolute font-cabinet_black hover:text-orange-400 transition-all duration-300 ease-out"
+              className="ml-10 md:ml-20 font-cabinet_black hover:text-orange-400 transition-all duration-300 ease-out"
               href={"/"}
             >
               HOME
@@ -36,9 +36,9 @@ export default function Contatti() {
             animate={{ y: "0%" }}
             transition={{ duration: 0.75, delay: 0.5, ease: "easeOut" }}
             exit={{ opacity: 1 }}
-            className="bg-stone-200 h-[84vh] w-full flex flex-col md:flex-row items-center justify-evenly"
+            className="bg-stone-200 h-[84vh] w-full flex flex-col lg:flex-row items-center justify-evenly"
           >
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-start w-[25rem]">
               <h2 className="text-5xl font-cabinet_black text-stone-800">
                 Ecco <br /> i miei
                 <span className=" text-orange-500"> contatti</span>

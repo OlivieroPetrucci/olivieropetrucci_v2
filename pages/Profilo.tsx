@@ -28,9 +28,9 @@ export default function Profilo() {
         className=" bg-stone-200"
       >
         <section className="flex flex-col ">
-          <nav className="h-[8vh] py-8 px-20 ">
+          <nav className="h-[8vh] flex items-center py-8 ">
             <Link
-              className="absolute left-10 md:left-0 font-cabinet_black hover:text-orange-400 transition-all duration-300 ease-out"
+              className=" ml-10 md:ml-20 font-cabinet_black hover:text-orange-400 transition-all duration-300 ease-out"
               href={"/"}
             >
               HOME
@@ -42,15 +42,15 @@ export default function Profilo() {
               animate={{ y: "0%" }}
               transition={{ duration: 0.75, delay: 0.5, ease: "easeOut" }}
               exit={{ opacity: 1 }}
-              className=" h-[84vh] w-full flex flex-col md:flex-row items-center justify-evenly"
+              className=" h-[92vh] w-full flex flex-col lg:flex-row items-center justify-evenly"
             >
               <div className="flex flex-col ">
-                <h2 className="text-4xl font-cabinet_black text-stone-800">
+                <h2 className="text-4xl md:text-5xl font-cabinet_black text-stone-800">
                   Ciao,<br></br>
                   sono{" "}
                   <span className=" text-orange-500">Oliviero Petrucci</span>
                 </h2>
-                <h3 className=" text-slate-600 text-base font-cabinet_medium ">
+                <h3 className=" text-slate-600 text-base md:text-lg font-cabinet_medium ">
                   Sviluppatore e fotografo.
                 </h3>
                 <div className="flex flex-row items-end h-20 pt-10">
@@ -90,7 +90,7 @@ export default function Profilo() {
 
             <div className="h-[60vh] md:h-[80vh] w-[80vw] mx-auto flex flex-col md:flex-row items-center md:items-start justify-center md:justify-evenly">
               <div className="flex flex-col">
-                <p className="text-lg w-[60vw] lg:w-[26vw] font-cabinet_medium leading-8 text-stone-700 flex flex-col items-center justify-center md:justify-start text-center">
+                <p className="text-lg w-[60vw] md:w-[40vw] lg:max-w-[26vw] font-cabinet_medium leading-8 text-stone-700 flex flex-col items-center justify-center md:justify-start text-center">
                   <span className=" border-b-2 border-orange-400 text-slate-800 text-xl font-cabinet_bold mb-4 ">
                     Sviluppatore
                   </span>
@@ -103,19 +103,19 @@ export default function Profilo() {
                   <br></br> Sono inoltre un grande appassionato di tecnologia e
                   innovazione.
                 </p>
-                <div className="hidden md:flex h-[40vh]"></div>
+                <div className="hidden md:flex md:h-[30vh] lg:h-[40vh]"></div>
               </div>
               <div className="flex flex-col">
-                <div className="hidden md:flex h-[20vh]"></div>
-                <div className="hidden md:flex h-[80vh] w-[40vw]">
+                <div className="hidden md:flex md:h-[20vh]"></div>
+                <div className="hidden md:flex md:h-[60vh]  md:w-[40vw]">
                   <Image src={dev_svg} alt={""}></Image>
                 </div>
               </div>
             </div>
 
-            <div className="md:h-[80vh] w-[80vw] mx-auto flex flex-col md:flex-row items-center md:items-start justify-center md:justify-evenly">
+            <div className="h-[60vh] md:h-[80vh] w-[80vw] mx-auto flex flex-col md:flex-row items-center md:items-start justify-center md:justify-evenly">
               <div className="flex flex-col">
-                <p className="text-lg w-[60vw] lg:w-[26vw] font-cabinet_medium leading-8 text-stone-700 flex flex-col items-center justify-center md:justify-start text-center">
+                <p className="text-lg w-[60vw] md:w-[40vw] lg:max-w-[26vw] font-cabinet_medium leading-8 text-stone-700 flex flex-col items-center justify-center md:justify-start text-center">
                   <span className=" border-b-2 border-orange-400 text-slate-800 text-xl font-cabinet_bold mb-4 ">
                     Fotografo
                   </span>
@@ -126,17 +126,17 @@ export default function Profilo() {
                   ad arrivare all'architettura.<br></br> Ho sempre mantenuto una
                   mia trama stilistica anche se in continua evoluzione.
                 </p>
-                <div className="hidden md:flex h-[40vh]"></div>
+                <div className="hidden md:flex md:h-[30vh] lg:h-[40vh]"></div>
               </div>
               <div className="flex flex-col">
-                <div className="hidden md:flex h-[20vh]"></div>
-                <div className="hidden md:flex h-[80vh] w-[40vw]">
+                <div className="hidden md:flex md:h-[20vh]"></div>
+                <div className="hidden md:flex md:h-[60vh] md:w-[40vw]">
                   <Image src={pol_svg} alt={""}></Image>
                 </div>
               </div>
             </div>
           </div>
-          <footer className="h-[8vh] text-xs flex items-center justify-center">
+          <footer className=" my-10 text-xs flex items-center justify-center">
             Created by Oliviero Petrucci
           </footer>
         </section>
