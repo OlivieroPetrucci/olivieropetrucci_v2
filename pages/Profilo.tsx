@@ -30,7 +30,7 @@ export default function Profilo() {
         <section className="flex flex-col ">
           <nav className="h-[8vh] py-8 px-20 ">
             <Link
-              className="absolute font-cabinet_black hover:text-orange-400 transition-all duration-300 ease-out"
+              className="absolute left-10 md:left-0 font-cabinet_black hover:text-orange-400 transition-all duration-300 ease-out"
               href={"/"}
             >
               HOME
@@ -42,15 +42,15 @@ export default function Profilo() {
               animate={{ y: "0%" }}
               transition={{ duration: 0.75, delay: 0.5, ease: "easeOut" }}
               exit={{ opacity: 1 }}
-              className=" h-[92vh] w-full flex flex-col md:flex-row items-center justify-evenly"
+              className=" h-[84vh] w-full flex flex-col md:flex-row items-center justify-evenly"
             >
-              <div className="flex flex-col items-start">
-                <h2 className="text-5xl font-cabinet_black text-stone-800">
+              <div className="flex flex-col ">
+                <h2 className="text-4xl font-cabinet_black text-stone-800">
                   Ciao,<br></br>
                   sono{" "}
                   <span className=" text-orange-500">Oliviero Petrucci</span>
                 </h2>
-                <h3 className=" text-slate-600 text-lg font-cabinet_medium ">
+                <h3 className=" text-slate-600 text-base font-cabinet_medium ">
                   Sviluppatore e fotografo.
                 </h3>
                 <div className="flex flex-row items-end h-20 pt-10">
@@ -88,7 +88,7 @@ export default function Profilo() {
               </div>
             </motion.div>
 
-            <div className="h-[80vh] w-[80vw] mx-auto flex flex-row items-start justify-evenly">
+            <div className="h-[60vh] md:h-[80vh] w-[80vw] mx-auto flex flex-col md:flex-row items-center md:items-start justify-center md:justify-evenly">
               <div className="flex flex-col">
                 <p className="text-lg w-[60vw] lg:w-[26vw] font-cabinet_medium leading-8 text-stone-700 flex flex-col items-center justify-center md:justify-start text-center">
                   <span className=" border-b-2 border-orange-400 text-slate-800 text-xl font-cabinet_bold mb-4 ">
@@ -103,17 +103,17 @@ export default function Profilo() {
                   <br></br> Sono inoltre un grande appassionato di tecnologia e
                   innovazione.
                 </p>
-                <div className="h-[40vh]"></div>
+                <div className="hidden md:flex h-[40vh]"></div>
               </div>
               <div className="flex flex-col">
-                <div className="h-[20vh]"></div>
-                <div className="h-[80vh] w-[40vw]">
+                <div className="hidden md:flex h-[20vh]"></div>
+                <div className="hidden md:flex h-[80vh] w-[40vw]">
                   <Image src={dev_svg} alt={""}></Image>
                 </div>
               </div>
             </div>
 
-            <div className="h-screen w-[80vw] mx-auto flex flex-row items-start justify-evenly">
+            <div className="md:h-[80vh] w-[80vw] mx-auto flex flex-col md:flex-row items-center md:items-start justify-center md:justify-evenly">
               <div className="flex flex-col">
                 <p className="text-lg w-[60vw] lg:w-[26vw] font-cabinet_medium leading-8 text-stone-700 flex flex-col items-center justify-center md:justify-start text-center">
                   <span className=" border-b-2 border-orange-400 text-slate-800 text-xl font-cabinet_bold mb-4 ">
@@ -126,11 +126,11 @@ export default function Profilo() {
                   ad arrivare all'architettura.<br></br> Ho sempre mantenuto una
                   mia trama stilistica anche se in continua evoluzione.
                 </p>
-                <div className="h-[40vh]"></div>
+                <div className="hidden md:flex h-[40vh]"></div>
               </div>
               <div className="flex flex-col">
-                <div className="h-[20vh]"></div>
-                <div className="h-[80vh] w-[40vw]">
+                <div className="hidden md:flex h-[20vh]"></div>
+                <div className="hidden md:flex h-[80vh] w-[40vw]">
                   <Image src={pol_svg} alt={""}></Image>
                 </div>
               </div>
@@ -138,26 +138,6 @@ export default function Profilo() {
           </div>
           <footer className="h-[8vh] text-xs flex items-center justify-center">
             Created by Oliviero Petrucci
-          </footer>
-
-          <footer className="flex items-start justify-evenly py-10 md:hidden">
-            <p className="border-b-2 border-orange-400 text-slate-800 text-xl font-cabinet_bold">
-              Contatti:
-            </p>
-            <ul className="text-sm">
-              <li className="text-slate-600">
-                call me: <span className="text-orange-500">+393920099497</span>{" "}
-              </li>
-              <li className="text-slate-600">
-                send email:{" "}
-                <span className="text-orange-500">
-                  olivieropetrucci.work@gmail.com
-                </span>{" "}
-              </li>
-              <li className="text-slate-600">
-                download <span className="text-orange-500">CV</span>{" "}
-              </li>
-            </ul>
           </footer>
         </section>
       </motion.main>

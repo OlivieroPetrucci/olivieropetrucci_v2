@@ -28,7 +28,7 @@ export default function Collaborazioni() {
         <section className="flex flex-col ">
           <nav className="h-[8vh] py-8 px-20 ">
             <Link
-              className="absolute font-cabinet_black hover:text-orange-400 transition-all duration-300 ease-out"
+              className="absolute left-10 md:left-0 font-cabinet_black hover:text-orange-400 transition-all duration-300 ease-out"
               href={"/"}
             >
               HOME
@@ -39,18 +39,18 @@ export default function Collaborazioni() {
             animate={{ y: "0%" }}
             transition={{ duration: 0.75, delay: 0.5, ease: "easeOut" }}
             exit={{ opacity: 1 }}
-            className="bg-stone-200 h-[84vh] w-full flex flex-col md:flex-row items-center justify-evenly"
+            className="bg-stone-200 md:h-[84vh] w-full flex flex-col md:flex-row items-center justify-evenly"
           >
-            <div className="flex flex-col items-start">
-              <h2 className="text-5xl font-cabinet_black text-stone-800">
+            <div className="flex flex-col items-start justify-center h-[20vh]">
+              <h2 className="text-4xl font-cabinet_black text-stone-800">
                 Alcune <br /> delle
                 <span className=" text-orange-500"> collaborazioni</span>
               </h2>
-              <h3 className=" text-slate-600 text-lg font-cabinet_medium ">
+              <h3 className=" text-slate-600 text-base font-cabinet_medium ">
                 I gruppi con cui ho lavorato.
               </h3>
             </div>
-            <div className="grid gap-10 grid-cols-3 grid-rows-3">
+            <div className="grid gap-10 grid-cols-2 md:grid-cols-3 grid-rows-4 md:grid-rows-3">
               <div className="h-[8rem] w-[12rem] flex items-center justify-center hover:pb-6 hover:border-b-4 rounded-xl border-slate-600 transition-all duration-300 ease-out cursor-pointer">
                 <Image src={dilmos} alt={""} className=""></Image>
               </div>
